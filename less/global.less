@@ -4,13 +4,22 @@
 
 html {
   font-size: 62.5%;
+
+  @media (max-width: @mobileBreakpoint) {
+    font-size: 50%;
+  }
 }
 
-html, body {
+html,
+body {
   font-family: 'Roboto', sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: 'Indie Flower', cursive;
 }
 
@@ -43,4 +52,14 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+
+  @media (max-width: @tabletBreakpoint) {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  @media (max-width: @mobileBreakpoint) {
+    width: 90%;
+  }
 }

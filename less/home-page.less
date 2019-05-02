@@ -6,6 +6,19 @@
         padding: 2em 0;
         max-width: 800px;
         margin: auto;
+
+        @media (max-width: @tabletBreakpoint) {
+          max-width: 500px;
+          width: 100%;
+          margin: 0 auto;
+        }
+
+        @media (max-width: @mobileBreakpoint) {
+          .flex(column, 0, stretch);
+          width: 100%;
+          text-align: center;
+          padding: 1em 0 0 0;
+        }
       }
     }
 
@@ -25,16 +38,30 @@
         flex-wrap: wrap;
         justify-content: space-between;
 
+        @media (max-width: @mobileBreakpoint) {
+          flex-direction: column;
+          margin: 10px 0;
+        }
+
 
 
         .text-content {
           width: 48%;
           padding-right: 1%;
+
+          @media (max-width: @mobileBreakpoint) {
+            width: 96%;
+            border-bottom: 0;
+          }
         }
 
         .img-content {
           width: 48%;
           padding-left: 1%;
+
+          @media (max-width: @mobileBreakpoint) {
+            width: 96%;
+          }
 
           img {
             border-radius: 10px;
@@ -45,6 +72,10 @@
       .inverse-content {
         padding-bottom: 30px;
         border-bottom: @border;
+
+        @media (max-width: @mobileBreakpoint) {
+          .flex(column-reverse, 0, 0);
+        }
 
         .text-content {
           padding-left: 1%;
@@ -61,6 +92,10 @@
         width: 75%;
         margin: 0 auto 30px;
 
+        @media (max-width: @mobileBreakpoint) {
+          width: 100%;
+        }
+
         img {
           border-radius: 10px;
         }
@@ -72,9 +107,19 @@
         display: flex;
         justify-content: space-between;
 
+        @media (max-width: @mobileBreakpoint) {
+          .flex(column, 0, 0);
+        }
+
         .destination {
           width: 30%;
           margin-bottom: 30px;
+
+          @media (max-width: @mobileBreakpoint) {
+            width: 80%;
+            margin: 0 auto;
+            padding: 1rem 0;
+          }
 
           .btn {
             .btn(@button-bg);
