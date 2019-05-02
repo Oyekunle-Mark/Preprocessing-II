@@ -1,70 +1,84 @@
-  header {
-    .flex(0, space-between, baseline);
-    border-bottom: @border;
-    padding: 20px 10%;
-  }
+    header {
+      border-bottom: @border;
 
-
-.home {
-
- 
-
-  .content-section {
-    margin: 30px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-   
-    
-    .text-content {
-      width: 48%;
-      padding-right: 1%;
-    }
-
-    .img-content {
-      width: 48%;
-      padding-left: 1%;
-
-      img {
-        border-radius: 10px;
+      .container-header {
+        .flex(0, space-between, baseline);
+        padding: 2em 0;
+        max-width: 800px;
+        margin: auto;
       }
     }
-  }
 
-  .inverse-content {
-    padding-bottom: 30px;
-    border-bottom: @border;
+    .home {
 
-    .text-content {
-      padding-left: 1%;
-      padding-right: 0;
+      section {
+        .text-content {
+          padding-top: 2rem;
+          padding-bottom: 1rem;
+          border-bottom: @border;
+        }
+      }
+
+      .content-section {
+        margin: 30px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+
+
+        .text-content {
+          width: 48%;
+          padding-right: 1%;
+        }
+
+        .img-content {
+          width: 48%;
+          padding-left: 1%;
+
+          img {
+            border-radius: 10px;
+          }
+        }
+      }
+
+      .inverse-content {
+        padding-bottom: 30px;
+        border-bottom: @border;
+
+        .text-content {
+          padding-left: 1%;
+          padding-right: 0;
+        }
+
+        .img-content {
+          padding-right: 1%;
+          padding-left: 0;
+        }
+      }
+
+      .content-destination {
+        width: 75%;
+        margin: 0 auto 30px;
+
+        img {
+          border-radius: 10px;
+        }
+      }
+
+      .content-pick {
+        padding-top: 30px;
+        border-top: @border;
+        display: flex;
+        justify-content: space-between;
+
+        .destination {
+          width: 30%;
+          margin-bottom: 30px;
+
+          .btn {
+            .btn(@button-bg);
+          }
+        }
+      }
     }
-
-    .img-content {
-      padding-right: 1%;
-      padding-left: 0;
-    }
-  }
-
-  .content-destination {
-    width: 75%;
-    margin: 0 auto 30px;
-
-    img {
-      border-radius: 10px;
-    }
-  }
-
-  .content-pick {
-    padding-top: 30px;
-    border-top: @border;
-    display: flex;
-    justify-content: space-between;
-
-    .destination {
-      width: 30%;
-      margin-bottom: 30px;
-    }
-  }
-}
