@@ -276,6 +276,12 @@ header .container-header {
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
+  border-bottom: 0;
+}
+@media (max-width: 800px) {
+  .home .content-section .text-content {
+    padding-top: 0;
+  }
 }
 @media (max-width: 500px) {
   .home .content-section .text-content {
