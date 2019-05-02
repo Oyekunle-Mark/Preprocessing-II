@@ -168,9 +168,23 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+nav {
+  width: 40%;
+}
+nav ul {
+  display: flex;
+  flex-direction: 0;
+  justify-content: space-between;
+  align-items: 0;
+}
+nav ul li {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
 .footer {
   width: 100%;
-  border-top: 2px dashed silver;
+  border-top: 2px dashed #C0C0C0;
   background: #FFEBCD;
 }
 .footer p {
@@ -178,6 +192,14 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+header {
+  display: flex;
+  flex-direction: 0;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 2px dashed #C0C0C0;
+  padding: 20px 10%;
 }
 .home .content-section {
   margin: 30px 0;
